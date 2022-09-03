@@ -1,0 +1,306 @@
+{
+    "0": [{
+        "question": "What is the name of the code entered at the ATM to recive money?",
+        "A": "Pin",
+        "B": "Code",
+        "C": "Number",
+        "D": "Spike",
+        "correct": "Pin"
+    },
+    {
+        "question": "Which of the following can live both in water and on land?",
+        "A": "Dog",
+        "B": "Frog",
+        "C": "Bird",
+        "D": "Fish",
+        "correct": "Frog"
+    },
+    {
+        "question": "What chemical is added to the water in swimming pools?",
+        "A": "Salt",
+        "B": "Quicksilver",
+        "C": "Ammonia",
+        "D": "Chlorine",
+        "correct": "Chlorine"
+    },
+    {
+        "question": "A magnet would most likely attract which of the following?",
+        "A": "Metal",
+        "B": "Plastic",
+        "C": "Wood",
+        "D": "Glass",
+        "correct": "Metal"
+    },
+    {
+        "question": "What color is the 8 ball in pool?",
+        "A": "Green",
+        "B": "Black",
+        "C": "White",
+        "D": "Red",
+        "correct": "Black"
+    }],
+    "1": [{
+        "question": "What color are rubies?",
+        "A": "White",
+        "B": "Blue",
+        "C": "Red",
+        "D": "Green",
+        "correct": "Red"
+    },
+    {
+        "question": "How many stars are on the flag of the United States?",
+        "A": "50",
+        "B": "51",
+        "C": "48",
+        "D": "37",
+        "correct": "50"
+    },
+    {
+        "question": "Which of these is a title of a Shakespeare play?",
+        "A": "Pamphlet",
+        "B": "Porklet",
+        "C": "Hamlet",
+        "D": "Gimlet",
+        "correct": "Hamlet"
+    }],
+    "2": [{
+        "question": "'Zorro' is the Spanish word for what?",
+        "A": "Lion",
+        "B": "Fox",
+        "C": "Rat",
+        "D": "Weasel",
+        "correct": "Fox"
+    },
+    {
+        "question": "What name is traditionally given to the party held for a woman who is expecting a baby?",
+        "A": "Baby shower",
+        "B": "Baby drizzle",
+        "C": "Baby downpour",
+        "D": "Baby deluge",
+        "correct": "Baby shower"
+    },
+    {
+        "question": "How many X's are there on a regular clock face with Roman numerals?",
+        "A": "2",
+        "B": "4",
+        "C": "5",
+        "D": "3",
+        "correct": "3"
+    }],
+    "3": [{
+        "question": "The Lemur is native to which country?",
+        "A": "South Africa",
+        "B": "India",
+        "C": "Austria",
+        "D": "Madagascar",
+        "correct": "Madagascar"
+    },
+    {
+        "question": "Which actor won an Academy Award for his role as Forrest Gamp",
+        "A": "Kevin Spacey",
+        "B": "Alec Baldwin",
+        "C": "Tom Hanks",
+        "D": "Denzel Washington",
+        "correct": "Tom Hanks"
+    },
+    {
+        "question": "What is the smallest country in the world?",
+        "A": "Iceland",
+        "B": "Seychelles",
+        "C": "Spain",
+        "D": "Vatican City",
+        "correct": "Vatican City"
+    }],
+    "4": [{
+        "question": "What skin color are avatars of James Cameron?",
+        "A": "Green",
+        "B": "Red",
+        "C": "Blue",
+        "D": "Yellow",
+        "correct": "Blue"
+    },
+    {
+        "question": "What is the capital of Austria?",
+        "A": "Venice",
+        "B": "Salzburg",
+        "C": "Vienna",
+        "D": "Budapest",
+        "correct": "Vienna"
+    },
+    {
+        "question": "Who sang the song 'We Are The Champions'?",
+        "A": "ZZ Top",
+        "B": "Backstreet Boys",
+        "C": "G Unit",
+        "D": "Queen",
+        "correct": "Queen"
+    }],
+    "5": [{
+        "question": "Which scientist won the Nobel Prize in 1922?",
+        "A": "E. Fermi",
+        "B": "A. Einstein",
+        "C": "N. Tesla",
+        "D": "I. Newton",
+        "correct": "A. Einstein"
+    },
+    {
+        "question": "Which film starred Jhonny Depp?",
+        "A": "Mystery Train",
+        "B": "Benny and Joon",
+        "C": "The Aviator",
+        "D": "Untamed Heart",
+        "correct": "Benny and Joon"
+    },
+    {
+        "question": "Who won the first ever football World Cup?",
+        "A": "Uruguay",
+        "B": "Brazil",
+        "C": "Portugal",
+        "D": "Sweden",
+        "correct": "Uruguay"
+    }],
+    "6": [{
+        "question": "Who was the first Emperor of Rome?",
+        "A": "Romulus",
+        "B": "Octavian Augustus",
+        "C": "Tiberius",
+        "D": "Julius Caesar",
+        "correct": "Octavian Augustus"
+    },
+    {
+        "question": "What is the unit of currency in Irland?",
+        "A": "Pound",
+        "B": "Lira",
+        "C": "Euro",
+        "D": "Dollar",
+        "correct": "Euro"
+    }],
+    "7": [{
+        "question": "In what year was the first iPhone released?",
+        "A": "2000",
+        "B": "2004",
+        "C": "2007",
+        "D": "2009",
+        "correct": "2007"
+    },
+    {
+        "question": "When playing Blackjack, how many points would be considered a bust?",
+        "A": "22",
+        "B": "21",
+        "C": "15",
+        "D": "19",
+        "correct": "22"
+    }],
+    "8": [{
+        "question": "What colour were the Pyramids of Giza originally?",
+        "A": "Orange",
+        "B": "Blue",
+        "C": "Pink",
+        "D": "White",
+        "correct": "White"
+    },
+    {
+        "question": "How many million miles away is the sun from the Earth?",
+        "A": "93 million",
+        "B": "12 million",
+        "C": "136 million",
+        "D": "200 million",
+        "correct": "93 million"
+    }],
+    "9": [{
+        "question": "If you asked for 'escargots' in a French restaurant what would you receive?" ,
+        "A": "Frogs' legs",
+        "B": "Truffles",
+        "C": "Snails",
+        "D": "Onions",
+        "correct": "Snails"
+    },
+    {
+        "question": "When you cut into an onion, which element causes it to smell?",
+        "A": "Plutonium",
+        "B": "Potassium",
+        "C": "Sulfur",
+        "D": "Hydrogen",
+        "correct": "Sulfur"
+    }],
+    "10": [{
+        "question": "Leo Tolstoy's title was what?",
+        "A": "Duke",
+        "B": "Cavalier",
+        "C": "Count",
+        "D": "Prince",
+        "correct": "Count"
+    },
+    {
+        "question": "",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "correct": ""
+    }],
+    "11": [{
+        "question": "Who was the youngest British Prime Minister?",
+        "A": "David Cameron",
+        "B": "William Pitt the Younger",
+        "C": "Tony Blair",
+        "D": "William Cavendish",
+        "correct": "William Pitt the Younger"
+    },
+    {
+        "question": "",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "correct": ""
+    }],
+    "12": [{
+        "question": "What was the only painting sold by Vincent van Gogh during his lifetime?",
+        "A": "Sunflowers",
+        "B": "The Starry Night",
+        "C": "The Red Vineyard",
+        "D": "The Yellow House",
+        "correct": "The Red Vineyard"
+    },
+    {
+        "question": "",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "correct": ""
+    }],
+    "13": [{
+        "question": "Oysters can change something most other animals cannot. What is it?",
+        "A": "Their Size",
+        "B": "The thickness of their shell",
+        "C": "Their Gender",
+        "D": "Their color",
+        "correct": "Their Gender"
+    },
+    {
+        "question": "",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "correct": ""
+    }],
+    "14": [{
+        "question": "Out of these European countries, which has the smallest population density?",
+        "A": "Bulgaria",
+        "B": "Norway",
+        "C": "Iceland",
+        "D": "France",
+        "correct": "Iceland"
+    },
+    {
+        "question": "",
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": "",
+        "correct": ""
+    }]
+}
