@@ -37,7 +37,15 @@ levels_img.grid(row=0, column=0)
 level = 0
 question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
 
-
+def change_picture():
+    global level 
+    level += 1
+    canvas = Canvas(money_frame, bg='black', width=460, height=600, bd=0, highlightthickness=0, relief='ridge')
+    canvas.grid(row=0, column=0)
+    canvas.delete('all')
+    image = PhotoImage(file = f"Images/{level}.png")
+    canvas.create_image(230, 300, image = image)
+    canvas.image = image
 
 question = Label(game_frame_mid, text=question_text, bg='black', fg='white', font=('arial', 14, 'bold'), justify=CENTER)
 question.grid(row=1, column=0, pady=10)
@@ -67,7 +75,7 @@ c_answer.grid(row=1, column=4, padx=10, pady=10)
 d_text = Label(game_frame_bot, text="D:", bg='black', fg='white', font=('arial', 14, 'bold'))
 d_text.grid(row=2, column=3, pady=4, sticky=W)
 
-d_answer = Button(game_frame_bot, text=D_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'))
+d_answer = Button(game_frame_bot, text=D_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), command=change_picture)
 d_answer.grid(row=2, column=4, padx=10, pady=10)
 
 window.mainloop()
