@@ -42,7 +42,6 @@ while game:
 
     def change_picture():
         global level 
-        level += 1
         canvas = Canvas(money_frame, bg='black', width=460, height=600, bd=0, highlightthickness=0, relief='ridge')
         canvas.grid(row=0, column=0)
         canvas.delete('all')
@@ -52,35 +51,83 @@ while game:
 
     def get_a_answer():
         global level
+        global game
+        global a_answer
         ans = a_answer.cget('text')
         if ans == correct_answer:
             level += 1
+            a_answer.after(1000, update(a_answer, color='green'))
+            def next_question():
+                change_picture()
+                update_question_and_answers()
+                a_answer.after(100, update(a_answer, color='blue'))
+            a_answer.after(1000, next_question)
         else:
-            level -= 1
+            game = False
 
     def get_b_answer():
         global level
+        global game
+        global b_answer
         ans = b_answer.cget('text')
         if ans == correct_answer:
             level += 1
+            b_answer.after(1000, update(b_answer, color='green'))
+            def next_question():
+                change_picture()
+                update_question_and_answers()
+                b_answer.after(100, update(b_answer, color='blue'))
+            b_answer.after(1000, next_question)
         else:
-            level -= 1
+            game = False
+
+    def update(player_answer, color):
+        player_answer.configure(bg=color)
 
     def get_c_answer():
         global level
+        global game
+        global c_answer
         ans = c_answer.cget('text')
         if ans == correct_answer:
             level += 1
+            c_answer.after(1000, update(c_answer, color='green'))
+            def next_question():
+                change_picture()
+                update_question_and_answers()
+                c_answer.after(100, update(c_answer, color='blue'))
+            c_answer.after(1000, next_question)
         else:
-            level -= 1
+            
+            game = False
 
     def get_d_answer():
         global level
+        global game
+        global d_answer
         ans = d_answer.cget('text')
         if ans == correct_answer:
             level += 1
+            d_answer.after(1000, update(d_answer, color='green'))
+            def next_question():
+                change_picture()
+                update_question_and_answers()
+                d_answer.after(100, update(d_answer, color='blue'))
+            d_answer.after(1000, next_question)
         else:
-            level -= 1
+            game = False
+
+        
+    def update_question_and_answers():
+        global question
+        global correct_answer
+        question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
+        question.configure(text=question_text)
+        a_answer.configure(text=A_ans)
+        b_answer.configure(text=B_ans)
+        c_answer.configure(text=D_ans)
+        d_answer.configure(text=C_ans)
+        correct_answer = correct_answer
 
     question = Label(game_frame_mid, text=question_text, bg='black', fg='white', font=('arial', 14, 'bold'), justify=CENTER)
     question.grid(row=1, column=0, pady=10)
