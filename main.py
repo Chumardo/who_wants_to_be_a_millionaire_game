@@ -10,7 +10,7 @@ window.minsize(1400, 650)
 level = 0
 game = True
 
-while game:
+while game == True:
     frame = Frame(window, bg='black')
     frame.grid()
 
@@ -63,6 +63,13 @@ while game:
                 a_answer.after(100, update(a_answer, color='blue'))
             a_answer.after(1000, next_question)
         else:
+            a_answer.after(1000, update(a_answer, color='red'))
+            if correct_answer == b_answer.cget('text'):
+                 b_answer.after(1000, update(b_answer, color='green'))
+            elif correct_answer == c_answer.cget('text'):
+                c_answer.after(1000, update(c_answer, color='green'))
+            elif correct_answer == d_answer.cget('text'):
+                d_answer.after(1000, update(d_answer, color='red'))
             game = False
 
     def get_b_answer():
@@ -79,6 +86,14 @@ while game:
                 b_answer.after(100, update(b_answer, color='blue'))
             b_answer.after(1000, next_question)
         else:
+            b_answer.after(1000, update(b_answer, color='red'))
+            if correct_answer == a_answer.cget('text'):
+                 a_answer.after(1000, update(a_answer, color='green'))
+            elif correct_answer == c_answer.cget('text'):
+                c_answer.after(1000, update(c_answer, color='green'))
+            elif correct_answer == d_answer.cget('text'):
+                d_answer.after(1000, update(d_answer, color='green'))
+
             game = False
 
     def update(player_answer, color):
@@ -98,7 +113,13 @@ while game:
                 c_answer.after(100, update(c_answer, color='blue'))
             c_answer.after(1000, next_question)
         else:
-            
+            c_answer.after(1000, update(c_answer, color='red'))
+            if correct_answer == a_answer.cget('text'):
+                 a_answer.after(1000, update(a_answer, color='green'))
+            elif correct_answer == b_answer.cget('text'):
+                b_answer.after(1000, update(b_answer, color='green'))
+            elif correct_answer == d_answer.cget('text'):
+                d_answer.after(1000, update(d_answer, color='green'))
             game = False
 
     def get_d_answer():
@@ -115,6 +136,13 @@ while game:
                 d_answer.after(100, update(d_answer, color='blue'))
             d_answer.after(1000, next_question)
         else:
+            d_answer.after(1000, update(d_answer, color='red'))
+            if correct_answer == a_answer.cget('text'):
+                 a_answer.after(1000, update(a_answer, color='green'))
+            elif correct_answer == b_answer.cget('text'):
+                b_answer.after(1000, update(b_answer, color='green'))
+            elif correct_answer == c_answer.cget('text'):
+                c_answer.after(1000, update(c_answer, color='green'))
             game = False
 
         
