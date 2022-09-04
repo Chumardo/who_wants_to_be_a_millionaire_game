@@ -62,6 +62,14 @@
         "C": "Hamlet",
         "D": "Gimlet",
         "correct": "Hamlet"
+    },
+    {
+        "question": "Who created Sherlock Holmes?",
+        "A": "Arthur Conan Doyle",
+        "B": "Stephen King",
+        "C": "J. K. Rowling",
+        "D": "Ernest Hemingway",
+        "correct": "Arthur Conan Doyle"
     }],
     "2": [{
         "question": "'Zorro' is the Spanish word for what?",
@@ -134,6 +142,14 @@
         "C": "G Unit",
         "D": "Queen",
         "correct": "Queen"
+    },
+    {
+        "question": "What is the hottest planet in the solar system?",
+        "A": "Venus",
+        "B": "Mercury",
+        "C": "Jupiter",
+        "D": "Mars",
+        "correct": "Venus"
     }],
     "5": [{
         "question": "Which scientist won the Nobel Prize in 1922?",
@@ -158,6 +174,14 @@
         "C": "Portugal",
         "D": "Sweden",
         "correct": "Uruguay"
+    },
+    {
+        "question": "What geometric shape is generally used for stop signs?",
+        "A": "Square",
+        "B": "Octagon",
+        "C": "Parallelogram",
+        "D": "Triangle",
+        "correct": "Octagon"
     }],
     "6": [{
         "question": "Who was the first Emperor of Rome?",
@@ -174,6 +198,14 @@
         "C": "Euro",
         "D": "Dollar",
         "correct": "Euro"
+    },
+    {
+        "question": "What is 'cynophobia'?",
+        "A": "Fear of dogs",
+        "B": "Fear of computers",
+        "C": "Fear of horses",
+        "D": "Fear of blood",
+        "correct": "Fear of dogs"
     }],
     "7": [{
         "question": "In what year was the first iPhone released?",
@@ -222,6 +254,14 @@
         "C": "Sulfur",
         "D": "Hydrogen",
         "correct": "Sulfur"
+    },
+    {
+        "question": "What is the name of the largest ocean on earth?",
+        "A": "Pacific Ocean",
+        "B": "Atlantic Ocean",
+        "C": "Indian Ocean",
+        "D": "Arctic Ocean",
+        "correct": "Pacific Ocean"
     }],
     "10": [{
         "question": "Leo Tolstoy's title was what?",
@@ -296,11 +336,11 @@
         "correct": "Iceland"
     },
     {
-        "question": "",
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": "",
-        "correct": ""
+        "question": "How many points did Michael Jordan score on his first NBA game?",
+        "A": "16",
+        "B": "22",
+        "C": "38",
+        "D": "12",
+        "correct": "16"
     }]
 }
