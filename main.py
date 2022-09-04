@@ -173,28 +173,28 @@ while game == True:
     a_text = Label(game_frame_bot, text="A:", bg='black', fg='white', font=('arial', 14, 'bold'))
     a_text.grid(row=1, column=0, pady=4, sticky=W)
 
-    a_answer = Button(game_frame_bot, text=A_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), command=get_a_answer)
+    a_answer = Button(game_frame_bot, text=A_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), highlightthickness=0, command=get_a_answer)
     a_answer.grid(row=1, column=1, padx=10, pady=10)
 
     #B
     b_text = Label(game_frame_bot, text="B:", bg='black', fg='white', font=('arial', 14, 'bold'))
     b_text.grid(row=2, column=0, pady=4, sticky=W)
 
-    b_answer = Button(game_frame_bot, text=B_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), command=get_b_answer)
+    b_answer = Button(game_frame_bot, text=B_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), highlightthickness=0, command=get_b_answer)
     b_answer.grid(row=2, column=1, padx=10, pady=10)
 
     #C
     c_text = Label(game_frame_bot, text="C:", bg='black', fg='white', font=('arial', 14, 'bold'))
     c_text.grid(row=1, column=3, pady=4, sticky=W)
 
-    c_answer = Button(game_frame_bot, text=C_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), command=get_c_answer)
+    c_answer = Button(game_frame_bot, text=C_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), highlightthickness=0, command=get_c_answer)
     c_answer.grid(row=1, column=4, padx=10, pady=10)
 
     #D
     d_text = Label(game_frame_bot, text="D:", bg='black', fg='white', font=('arial', 14, 'bold'))
     d_text.grid(row=2, column=3, pady=4, sticky=W)
 
-    d_answer = Button(game_frame_bot, text=D_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), command=get_d_answer)
+    d_answer = Button(game_frame_bot, text=D_ans, bg='blue', fg='white', width=30, height=2, font=('arial', 14, 'bold'), highlightthickness=0, command=get_d_answer)
     d_answer.grid(row=2, column=4, padx=10, pady=10)
 
 
