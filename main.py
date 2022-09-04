@@ -7,6 +7,7 @@ window.configure(bg="black")
 window.iconphoto(False, PhotoImage(file='Images/icon.png'))
 window.minsize(1400, 650)
 
+money_level = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000]
 level = 0
 game = True
 
@@ -39,6 +40,13 @@ while game == True:
     levels_img.grid(row=0, column=0)
 
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
+
+    def win_lose(text):
+        canvas = Canvas(game_frame_mid, bg='black', width=860, height=200, bd=0, highlightthickness=0, relief='ridge')
+        canvas.grid(row=0, column=0)
+        canvas.delete('all')
+        canvas.create_text(430, 100, text=text, fill="white", font=('Helvetica 50 bold'))
+        canvas.grid()
 
     def change_picture():
         global level 
@@ -156,15 +164,24 @@ while game == True:
 
         
     def update_question_and_answers():
-        global question
-        global correct_answer
-        question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
-        question.configure(text=question_text)
-        a_answer.configure(text=A_ans)
-        b_answer.configure(text=B_ans)
-        c_answer.configure(text=D_ans)
-        d_answer.configure(text=C_ans)
-        correct_answer = correct_answer
+        if level < 15:
+            global question
+            global correct_answer
+            question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
+            question.configure(text=question_text)
+            a_answer.configure(text=A_ans)
+            b_answer.configure(text=B_ans)
+            c_answer.configure(text=D_ans)
+            d_answer.configure(text=C_ans)
+            correct_answer = correct_answer
+        else:
+            a_answer.configure(text='1,000,000')
+            b_answer.configure(text='1,000,000')
+            c_answer.configure(text='1,000,000')
+            d_answer.configure(text='1,000,000')
+            question.configure(text=' YOU ARE A MILLIONAIRE', font=('arial', 30, 'bold'))
+            disable_buttons()
+            win_lose(text="1,000,000")
 
     question = Label(game_frame_mid, text=question_text, bg='black', fg='white', font=('arial', 14, 'bold'), justify=CENTER)
     question.grid(row=1, column=0, pady=10)
