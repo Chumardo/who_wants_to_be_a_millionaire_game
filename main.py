@@ -7,7 +7,6 @@ window.configure(bg="black")
 window.iconphoto(False, PhotoImage(file='Images/icon.png'))
 window.minsize(1400, 650)
 
-money_level = [100, 200, 300, 500, 1000, 2000, 4000, 8000, 16000, 32000, 64000, 125000, 250000, 500000]
 level = 0
 game = True
 
@@ -57,6 +56,32 @@ while game == True:
         canvas.create_image(230, 300, image = image)
         canvas.image = image
 
+    def level_wins():
+        if level >= 5 and level < 10:
+                a_answer.configure(text='1,000')
+                b_answer.configure(text='1,000')
+                c_answer.configure(text='1,000')
+                d_answer.configure(text='1,000')
+                question.configure(text='YOU WON', font=('arial', 15, 'bold'))
+                disable_buttons()
+                win_lose(text="1,000")
+        elif level >= 10 and level < 15:
+                a_answer.configure(text='32,000')
+                b_answer.configure(text='32,000')
+                c_answer.configure(text='32,000')
+                d_answer.configure(text='32,000')
+                question.configure(text='YOU WON', font=('arial', 14, 'bold'))
+                disable_buttons()
+                win_lose(text="32,000")
+        elif level < 5:
+            a_answer.configure(text='0')
+            b_answer.configure(text='0')
+            c_answer.configure(text='0')
+            d_answer.configure(text='0')
+            question.configure(text='YOU LOSE', font=('arial', 16, 'bold'))
+            disable_buttons()
+            win_lose(text="0")
+
     def get_a_answer():
         global level
         global game
@@ -68,7 +93,7 @@ while game == True:
             def next_question():
                 change_picture()
                 update_question_and_answers()
-                a_answer.after(100, update(a_answer, color='blue'))
+                a_answer.after(1000, update(a_answer, color='blue'))
             a_answer.after(1000, next_question)
         else:
             a_answer.after(1000, update(a_answer, color='red'))
@@ -79,6 +104,7 @@ while game == True:
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='red'))
             game = False
+            level_wins()
             disable_buttons()
 
     def get_b_answer():
@@ -92,7 +118,7 @@ while game == True:
             def next_question():
                 change_picture()
                 update_question_and_answers()
-                b_answer.after(100, update(b_answer, color='blue'))
+                b_answer.after(1000, update(b_answer, color='blue'))
             b_answer.after(1000, next_question)
         else:
             b_answer.after(1000, update(b_answer, color='red'))
@@ -103,6 +129,7 @@ while game == True:
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
             game = False
+            level_wins()
             disable_buttons()
 
     def update(player_answer, color):
@@ -125,7 +152,7 @@ while game == True:
             def next_question():
                 change_picture()
                 update_question_and_answers()
-                c_answer.after(100, update(c_answer, color='blue'))
+                c_answer.after(1000, update(c_answer, color='blue'))
             c_answer.after(1000, next_question)
         else:
             c_answer.after(1000, update(c_answer, color='red'))
@@ -136,6 +163,7 @@ while game == True:
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
             game = False
+            level_wins()
             disable_buttons()
 
     def get_d_answer():
@@ -149,7 +177,7 @@ while game == True:
             def next_question():
                 change_picture()
                 update_question_and_answers()
-                d_answer.after(100, update(d_answer, color='blue'))
+                d_answer.after(1000, update(d_answer, color='blue'))
             d_answer.after(1000, next_question)
         else:
             d_answer.after(1000, update(d_answer, color='red'))
@@ -160,6 +188,7 @@ while game == True:
             elif correct_answer == c_answer.cget('text'):
                 c_answer.after(1000, update(c_answer, color='green'))
             game = False
+            level_wins()
             disable_buttons()
 
         
