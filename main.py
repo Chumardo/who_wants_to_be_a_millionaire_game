@@ -71,6 +71,7 @@ while game == True:
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='red'))
             game = False
+            disable_buttons()
 
     def get_b_answer():
         global level
@@ -93,11 +94,17 @@ while game == True:
                 c_answer.after(1000, update(c_answer, color='green'))
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
-
             game = False
+            disable_buttons()
 
     def update(player_answer, color):
         player_answer.configure(bg=color)
+
+    def disable_buttons():
+        a_answer.configure(state=DISABLED)
+        b_answer.configure(state=DISABLED)
+        c_answer.configure(state=DISABLED)
+        d_answer.configure(state=DISABLED)
 
     def get_c_answer():
         global level
@@ -121,6 +128,7 @@ while game == True:
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
             game = False
+            disable_buttons()
 
     def get_d_answer():
         global level
@@ -144,6 +152,7 @@ while game == True:
             elif correct_answer == c_answer.cget('text'):
                 c_answer.after(1000, update(c_answer, color='green'))
             game = False
+            disable_buttons()
 
         
     def update_question_and_answers():
