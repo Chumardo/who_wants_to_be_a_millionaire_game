@@ -78,8 +78,16 @@ while game == True:
 
 
     fifty_image = PhotoImage(file="Images/jpge50.png")
-    fifty_btn = Button(game_frame_top, image=fifty_image, bg='black', width=85, height=50, highlightthickness=0, command=fifty_fifty)
+    fifty_btn = Button(game_frame_top, image=fifty_image, bg='white', width=85, height=50, highlightthickness=0, command=fifty_fifty)
     fifty_btn.place(x=300, y=5)
+
+    def audience_help():
+        global correct_answer, a_answer, b_answer, c_answer, d_answer
+        
+
+    audience_image = PhotoImage(file="Images/audience.png")
+    audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0)
+    audience_btn.place(x=450, y=5)
 
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
 

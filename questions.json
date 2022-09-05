@@ -270,14 +270,6 @@
         "C": "Count",
         "D": "Prince",
         "correct": "Count"
-    },
-    {
-        "question": "",
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": "",
-        "correct": ""
     }],
     "11": [{
         "question": "Who was the youngest British Prime Minister?",
@@ -286,14 +278,6 @@
         "C": "Tony Blair",
         "D": "William Cavendish",
         "correct": "William Pitt the Younger"
-    },
-    {
-        "question": "",
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": "",
-        "correct": ""
     }],
     "12": [{
         "question": "What was the only painting sold by Vincent van Gogh during his lifetime?",
@@ -302,14 +286,6 @@
         "C": "The Red Vineyard",
         "D": "The Yellow House",
         "correct": "The Red Vineyard"
-    },
-    {
-        "question": "",
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": "",
-        "correct": ""
     }],
     "13": [{
         "question": "Oysters can change something most other animals cannot. What is it?",
@@ -318,14 +294,6 @@
         "C": "Their Gender",
         "D": "Their color",
         "correct": "Their Gender"
-    },
-    {
-        "question": "",
-        "A": "",
-        "B": "",
-        "C": "",
-        "D": "",
-        "correct": ""
     }],
     "14": [{
         "question": "Out of these European countries, which has the smallest population density?",
