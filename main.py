@@ -1,4 +1,5 @@
 from tkinter import *
+from turtle import color
 from game import Game
 
 window = Tk()
@@ -58,26 +59,14 @@ while game == True:
 
     def level_wins():
         if level >= 5 and level < 10:
-                a_answer.configure(text='1,000')
-                b_answer.configure(text='1,000')
-                c_answer.configure(text='1,000')
-                d_answer.configure(text='1,000')
                 question.configure(text='YOU WON', font=('arial', 15, 'bold'))
                 disable_buttons()
                 win_lose(text="1,000")
         elif level >= 10 and level < 15:
-                a_answer.configure(text='32,000')
-                b_answer.configure(text='32,000')
-                c_answer.configure(text='32,000')
-                d_answer.configure(text='32,000')
                 question.configure(text='YOU WON', font=('arial', 14, 'bold'))
                 disable_buttons()
                 win_lose(text="32,000")
         elif level < 5:
-            a_answer.configure(text='0')
-            b_answer.configure(text='0')
-            c_answer.configure(text='0')
-            d_answer.configure(text='0')
             question.configure(text='YOU LOSE', font=('arial', 16, 'bold'))
             disable_buttons()
             win_lose(text="0")
@@ -102,10 +91,9 @@ while game == True:
             elif correct_answer == c_answer.cget('text'):
                 c_answer.after(1000, update(c_answer, color='green'))
             elif correct_answer == d_answer.cget('text'):
-                d_answer.after(1000, update(d_answer, color='red'))
+                d_answer.after(1000, update(d_answer, color='green'))
             game = False
             level_wins()
-            disable_buttons()
 
     def get_b_answer():
         global level
@@ -130,7 +118,6 @@ while game == True:
                 d_answer.after(1000, update(d_answer, color='green'))
             game = False
             level_wins()
-            disable_buttons()
 
     def update(player_answer, color):
         player_answer.configure(bg=color)
@@ -162,9 +149,7 @@ while game == True:
                 b_answer.after(1000, update(b_answer, color='green'))
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
-            game = False
             level_wins()
-            disable_buttons()
 
     def get_d_answer():
         global level
@@ -189,7 +174,6 @@ while game == True:
                 c_answer.after(1000, update(c_answer, color='green'))
             game = False
             level_wins()
-            disable_buttons()
 
         
     def update_question_and_answers():
