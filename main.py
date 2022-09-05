@@ -1,5 +1,5 @@
+import random
 from tkinter import *
-from turtle import color
 from game import Game
 
 window = Tk()
@@ -7,6 +7,7 @@ window.title("Who wants to be a millionaire?")
 window.configure(bg="black")
 window.iconphoto(False, PhotoImage(file='Images/icon.png'))
 window.minsize(1400, 650)
+window.maxsize(1400, 650)
 
 level = 0
 game = True
@@ -39,6 +40,47 @@ while game == True:
     levels_img = Label(money_frame, image=money_image, bg='black', width=460, height=600)
     levels_img.grid(row=0, column=0)
 
+    def fifty_fifty():
+        global correct_answer, a_answer, b_answer, c_answer, d_answer
+        if correct_answer == a_answer.cget('text'):
+            list_answers = [b_answer, c_answer, d_answer]
+            rand_1 = random.choice(list_answers)
+            list_answers.remove(rand_1)
+            rand_2 = random.choice(list_answers)
+            rand_1.configure(text='')
+            rand_2.configure(text='')
+            fifty_btn.configure(state=DISABLED)
+        elif correct_answer == b_answer.cget('text'):
+            list_answers = [a_answer, c_answer, d_answer]
+            rand_1 = random.choice(list_answers)
+            list_answers.remove(rand_1)
+            rand_2 = random.choice(list_answers)
+            rand_1.configure(text='')
+            rand_2.configure(text='')
+            fifty_btn.configure(state=DISABLED)
+        elif correct_answer == c_answer.cget('text'):
+            list_answers = [a_answer, b_answer, d_answer]
+            rand_1 = random.choice(list_answers)
+            list_answers.remove(rand_1)
+            rand_2 = random.choice(list_answers)
+            rand_1.configure(text='')
+            rand_2.configure(text='')
+            fifty_btn.configure(state=DISABLED)
+        elif correct_answer == d_answer.cget('text'):
+            list_answers = [a_answer, b_answer, c_answer]
+            rand_1 = random.choice(list_answers)
+            list_answers.remove(rand_1)
+            rand_2 = random.choice(list_answers)
+            rand_1.configure(text='')
+            rand_2.configure(text='')
+            fifty_btn.configure(state=DISABLED)
+    
+
+
+    fifty_image = PhotoImage(file="Images/jpge50.png")
+    fifty_btn = Button(game_frame_top, image=fifty_image, bg='black', width=85, height=50, highlightthickness=0, command=fifty_fifty)
+    fifty_btn.place(x=300, y=5)
+
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
 
     def win_lose(text):
@@ -70,6 +112,7 @@ while game == True:
             question.configure(text='YOU LOSE', font=('arial', 16, 'bold'))
             disable_buttons()
             win_lose(text="0")
+            fifty_btn.grid_forget()
 
     def get_a_answer():
         global level
