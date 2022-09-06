@@ -1,6 +1,9 @@
 import random
 from tkinter import *
 from game import Game
+import matplotlib.pyplot as plt
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 window = Tk()
 window.title("Who wants to be a millionaire?")
@@ -31,6 +34,31 @@ while game == True:
     game_frame_bot = Frame(game_frame, bg='black', bd=20, width=900, height=200)
     game_frame_bot.grid(row=2, column=0)
 
+
+    def plot():
+
+        audience_window = Tk()
+        audience_window.title("Audience Help")
+        audience_window.geometry("400x400")
+        audience_window.minsize(400, 400)
+        audience_window.attributes('-topmost',True)
+    
+        fig = plt.figure(figsize = (10, 5))
+
+        answer = ['A','B','C','D']
+        audience_percentage = [23,12,51,14]
+
+        plt.bar(answer, audience_percentage)
+        plt.title('Audience Help')
+        plt.grid(True, axis= 'y')
+        plt.xlabel('Answer')
+        plt.ylabel('Percentage')
+        canvas = FigureCanvasTkAgg(fig, master = audience_window)  
+        canvas.draw()
+        canvas.get_tk_widget().pack()
+        toolbar = NavigationToolbar2Tk(canvas, audience_window)
+        toolbar.update()
+        canvas.get_tk_widget().pack()
 
     centre_image = PhotoImage(file = "Images/logo.png")
     logo_centre = Label(game_frame_mid, image= centre_image, bg='black', width=193, height=200)
@@ -81,12 +109,9 @@ while game == True:
     fifty_btn = Button(game_frame_top, image=fifty_image, bg='white', width=85, height=50, highlightthickness=0, command=fifty_fifty)
     fifty_btn.place(x=300, y=5)
 
-    def audience_help():
-        global correct_answer, a_answer, b_answer, c_answer, d_answer
-        
 
     audience_image = PhotoImage(file="Images/audience.png")
-    audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0)
+    audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0, command=plot)
     audience_btn.place(x=450, y=5)
 
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
@@ -247,7 +272,7 @@ while game == True:
             disable_buttons()
             win_lose(text="1,000,000")
 
-    question = Label(game_frame_mid, text=question_text, bg='black', fg='white', font=('arial', 14, 'bold'), justify=CENTER)
+    question = Label(game_frame_mid, text=question_text, bg='black', fg='white', font=('arial', 14, 'bold'), justify=CENTER, wraplength=700)
     question.grid(row=1, column=0, pady=10)
 
     #A
