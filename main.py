@@ -35,8 +35,7 @@ while game == True:
     game_frame_bot.grid(row=2, column=0)
 
 
-    def plot():
-
+    def plot(audience_percentage):
         audience_window = Tk()
         audience_window.title("Audience Help")
         audience_window.geometry("400x400")
@@ -46,7 +45,6 @@ while game == True:
         fig = plt.figure(figsize = (10, 5))
 
         answer = ['A','B','C','D']
-        audience_percentage = [23,12,51,14]
 
         plt.bar(answer, audience_percentage)
         plt.title('Audience Help')
@@ -109,9 +107,96 @@ while game == True:
     fifty_btn = Button(game_frame_top, image=fifty_image, bg='white', width=85, height=50, highlightthickness=0, command=fifty_fifty)
     fifty_btn.place(x=300, y=5)
 
+    def audience_help():
+        global a_answer, b_answer, c_answer, d_answer, correct_answer
+        if a_answer.cget('text') == '' and b_answer.cget('text') == '' and c_answer.cget('text') == correct_answer:
+            c_percentage = random.randint(45, 100)
+            d_percentage = 100 - c_percentage
+            audience_percentage = [0, 0, c_percentage, d_percentage]
+            plot(audience_percentage)
+        elif a_answer.cget('text') == '' and b_answer.cget('text') == '' and d_answer.cget('text') == correct_answer:
+            d_percentage = random.randint(45, 100)
+            c_percentage = 100 - d_percentage
+            audience_percentage = [0, 0, c_percentage, d_percentage]
+            plot(audience_percentage)
+        elif a_answer.cget('text') == '' and c_answer.cget('text') == '' and b_answer.cget('text') == correct_answer:
+            b_percentage = random.randint(45, 100)
+            d_percentage = 100 - b_percentage
+            audience_percentage = [0, b_percentage, 0, d_percentage]
+            plot(audience_percentage)
+        elif a_answer.cget('text') == '' and c_answer.cget('text') == '' and d_answer.cget('text') == correct_answer:
+            d_percentage = random.randint(45, 100)
+            b_percentage = 100 - d_percentage
+            audience_percentage = [0, b_percentage, 0, d_percentage]
+            plot(audience_percentage)
+        elif a_answer.cget('text') == '' and d_answer.cget('text') == '' and b_answer.cget('text') == correct_answer:
+            b_percentage = random.randint(45, 100)
+            c_percentage = 100 - b_percentage
+            audience_percentage = [0, b_percentage, c_percentage, 0]
+            plot(audience_percentage)
+        elif a_answer.cget('text') == '' and d_answer.cget('text') == '' and c_answer.cget('text') == correct_answer:
+            c_percentage = random.randint(45, 100)
+            b_percentage = 100 - c_percentage
+            audience_percentage = [0, b_percentage, c_percentage, 0]
+            plot(audience_percentage)
+        elif b_answer.cget('text') == '' and c_answer.cget('text') == '' and a_answer.cget('text') == correct_answer:
+            a_percentage = random.randint(45, 100)
+            d_percentage = 100 - a_percentage
+            audience_percentage = [a_percentage, 0, 0, d_percentage]
+            plot(audience_percentage)
+        elif b_answer.cget('text') == '' and c_answer.cget('text') == '' and d_answer.cget('text') == correct_answer:
+            d_percentage = random.randint(45, 100)
+            a_percentage = 100 - d_percentage
+            audience_percentage = [a_percentage, 0, 0, d_percentage]
+            plot(audience_percentage)
+        elif b_answer.cget('text') == '' and d_answer.cget('text') == '' and a_answer.cget('text') == correct_answer:
+            a_percentage = random.randint(45, 100)
+            c_percentage = 100 - a_percentage
+            audience_percentage = [a_percentage, 0, c_percentage, 0]
+            plot(audience_percentage)
+        elif b_answer.cget('text') == '' and d_answer.cget('text') == '' and c_answer.cget('text') == correct_answer:
+            c_percentage = random.randint(45, 100)
+            a_percentage = 100 - c_percentage
+            audience_percentage = [a_percentage, 0, c_percentage, 0]
+            plot(audience_percentage)
+        elif c_answer.cget('text') == '' and d_answer.cget('text') == '' and a_answer.cget('text') == correct_answer:
+            a_percentage = random.randint(45, 100)
+            b_percentage = 100 - a_percentage
+            audience_percentage = [a_percentage, b_percentage, 0, 0]
+            plot(audience_percentage)
+        elif c_answer.cget('text') == '' and d_answer.cget('text') == '' and b_answer.cget('text') == correct_answer:
+            b_percentage = random.randint(45, 100)
+            a_percentage = 100 - b_percentage
+            audience_percentage = [a_percentage, b_percentage, 0, 0]
+            plot(audience_percentage)
+        else:
+            if a_answer.cget('text') == correct_answer:
+                a_percentage = random.randint(45, 100)
+                b_percentage = random.randint(0, 100 - a_percentage)
+                c_percentage = random.randint(0, 100 - (a_percentage + b_percentage))
+                d_percentage = 100 - (a_percentage + b_percentage + c_percentage)
+            elif b_answer.cget('text') == correct_answer:
+                b_percentage = random.randint(45, 100)
+                a_percentage = random.randint(0, 100 - b_percentage)
+                c_percentage = random.randint(0, 100 - (a_percentage + b_percentage))
+                d_percentage = 100 - (a_percentage + b_percentage + c_percentage)
+            elif c_answer.cget('text') == correct_answer:
+                c_percentage = random.randint(45, 100)
+                a_percentage = random.randint(0, 100 - c_percentage)
+                b_percentage = random.randint(0, 100 - (a_percentage + c_percentage))
+                d_percentage = 100 - (a_percentage + b_percentage + c_percentage)
+            elif d_answer.cget('text') == correct_answer:
+                d_percentage = random.randint(45, 100)
+                a_percentage = random.randint(0, 100 - d_percentage)
+                b_percentage = random.randint(0, 100 - (a_percentage + d_percentage))
+                c_percentage = 100 - (a_percentage + b_percentage + d_percentage)
+            audience_percentage = [a_percentage, b_percentage, c_percentage, d_percentage]
+            plot(audience_percentage)
+        audience_btn.configure(state = DISABLED)
+
 
     audience_image = PhotoImage(file="Images/audience.png")
-    audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0, command=plot)
+    audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0, command=audience_help)
     audience_btn.place(x=450, y=5)
 
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
