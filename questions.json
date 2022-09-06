@@ -70,6 +70,14 @@
         "C": "J. K. Rowling",
         "D": "Ernest Hemingway",
         "correct": "Arthur Conan Doyle"
+    },
+    {
+        "question": "What name is given to a person who is against increasing the powers of the European Union?",
+        "A": "Eurosceptic",
+        "B": "Eurostar",
+        "C": "Eurotrash",
+        "D": "Eurovision",
+        "correct": "Eurosceptic"
     }],
     "2": [{
         "question": "'Zorro' is the Spanish word for what?",
@@ -94,6 +102,22 @@
         "C": "5",
         "D": "3",
         "correct": "3"
+    },
+    {
+        "question": "Which among these is not a song sung by Michael Jackson?",
+        "A": "Beat it",
+        "B": "Billie Jean",
+        "C": "Heal the World",
+        "D": "Hello",
+        "correct": "Hello"
+    },
+    {
+        "question": "What does 'goal in the locker room' mean in football?",
+        "A": "Goal at the beginning of the match",
+        "B": "Goal at the end of the first half",
+        "C": "Off-Goal",
+        "D": "Goal kick from the corner",
+        "correct": "Goal at the end of the first half"
     }],
     "3": [{
         "question": "The Lemur is native to which country?",
@@ -118,6 +142,22 @@
         "C": "Spain",
         "D": "Vatican City",
         "correct": "Vatican City"
+    },
+    {
+        "question": "Which of these is the nickname for a famous Scottish army regiment?",
+        "A": "Black Cat",
+        "B": "Black Widow",
+        "C": "Black Sea",
+        "D": "Black Watch",
+        "correct": "Black Watch"
+    },
+    {
+        "question": "How many countries have more population than India?",
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Three",
+        "correct": "One"
     }],
     "4": [{
         "question": "What skin color are avatars of James Cameron?",
@@ -206,6 +246,14 @@
         "C": "Fear of horses",
         "D": "Fear of blood",
         "correct": "Fear of dogs"
+    },
+    {
+        "question": "Who invented the revolver?",
+        "A": "Samuel Colt",
+        "B": "Bruce Browning",
+        "C": "Dan Wesson",
+        "D": "James Revolver",
+        "correct": "Samuel Colt"
     }],
     "7": [{
         "question": "In what year was the first iPhone released?",
@@ -222,6 +270,22 @@
         "C": "15",
         "D": "19",
         "correct": "22"
+    },
+    {
+        "question": "Cambridge Circus is in which UK city?",
+        "A": "Oxford",
+        "B": "Leeds",
+        "C": "Cambridge",
+        "D": "London",
+        "correct": "London"
+    },
+    {
+        "question": "According to Albert Einstein's famous saying, he does not play dice.",
+        "A": "Julius Caesar",
+        "B": "Newton",
+        "C": "God",
+        "D": "Himself",
+        "correct": "God"
     }],
     "8": [{
         "question": "What colour were the Pyramids of Giza originally?",
@@ -238,6 +302,22 @@
         "C": "136 million",
         "D": "200 million",
         "correct": "93 million"
+    },
+    {
+        "question": "Who was the first man to orbit the Earth?",
+        "A": "John Glenn",
+        "B": "Sergei Korolev",
+        "C": "Yuri Gagarin",
+        "D": "Michael Collins",
+        "correct": "Yuri Gagarin"
+    },
+    {
+        "question": "Who invented Coca-Cola?",
+        "A": "Angelo Mariani",
+        "B": "Asa Griger Candler",
+        "C": "Caleb Bradham",
+        "D": "John S. Pemberton",
+        "correct": "John S. Pemberton"
     }],
     "9": [{
         "question": "If you asked for 'escargots' in a French restaurant what would you receive?" ,
@@ -262,6 +342,22 @@
         "C": "Indian Ocean",
         "D": "Arctic Ocean",
         "correct": "Pacific Ocean"
+    },
+    {
+        "question": "In Alexander (sic) Dumas' book, 'The Three Musketeers', two of the musketeers are called Athos and Porthos. What was the name of the third Musketeer?",
+        "A": "Aramis",
+        "B": "Cardinal Richelieu",
+        "C": "D'Artagnan",
+        "D": "Planchet",
+        "correct": "Aramis"
+    },
+    {
+        "question": "In which year did Hillary Clinton become the 67th Secretary of State of the U.S.A.?",
+        "A": "2003",
+        "B": "2006",
+        "C": "2009",
+        "D": "2012",
+        "correct": "2009"
     }],
     "10": [{
         "question": "Leo Tolstoy's title was what?",
@@ -270,6 +366,22 @@
         "C": "Count",
         "D": "Prince",
         "correct": "Count"
+    },
+    {
+        "question": "What sport did Alan Shepard play on the moon while there in 1971?",
+        "A": "Golf",
+        "B": "Shot put",
+        "C": "Pole vault",
+        "D": "Hurdles",
+        "correct": "Golf"
+    },
+    {
+        "question": "Which of the following is meant by the Estonian geographical names Hiiumaa and Saaremaa?",
+        "A": "Cities",
+        "B": "Islands",
+        "C": "Lakes",
+        "D": "Rivers",
+        "correct": "Islands"
     }],
     "11": [{
         "question": "Who was the youngest British Prime Minister?",
@@ -278,6 +390,22 @@
         "C": "Tony Blair",
         "D": "William Cavendish",
         "correct": "William Pitt the Younger"
+    },
+    {
+        "question": "Whom does God approach with his index finger in the famous fresco in the ceiling of the Sistine Chapel in Rome?",
+        "A": "Jesus",
+        "B": "Adam",
+        "C": "John the Baptist",
+        "D": "Peter",
+        "correct": "Adam"
+    },
+    {
+        "question": "What is the type of wood that God calls Noah to build the ark according to Genesis?",
+        "A": "Moab",
+        "B": "Cypress",
+        "C": "Seraph",
+        "D": "Zealots",
+        "correct": "Cypress"
     }],
     "12": [{
         "question": "What was the only painting sold by Vincent van Gogh during his lifetime?",
@@ -286,6 +414,37 @@
         "C": "The Red Vineyard",
         "D": "The Yellow House",
         "correct": "The Red Vineyard"
+    },
+    {
+        "question": "The Reina Sofia Art Center is located in what European city?",
+        "A": "Madrid",
+        "B": "Lisbon",
+        "C": "Rome",
+        "D": "Vienna",
+        "correct": "Madrid"
+    },
+    {
+        "question": "Of the following movies, to which did Johnny Depp not contribute with his acting?",
+        "A": "Sweeney Todd",
+        "B": "Charlie and the Chocolate Factory",
+        "C": "Finding Neverland",
+        "D": "The Mask",
+        "correct": "The Mask"
+    },
+    {
+        "question": "Which word, that became familiar to many around the world in 2020, comes from the Italian for '40 days'?",
+        "A": "Lockdown",
+        "B": "Isolation",
+        "C": "Quarantine",
+        "D": "Pandemic",
+        "correct": "Quarantine"
+    },{
+        "question": "Which nation won the World Championships in football in both 1930 and 1950?",
+        "A": "Uruguay",
+        "B": "Italy",
+        "C": "Brazil",
+        "D": "Hungary",
+        "correct": "Uruguay"
     }],
     "13": [{
         "question": "Oysters can change something most other animals cannot. What is it?",
@@ -294,6 +453,22 @@
         "C": "Their Gender",
         "D": "Their color",
         "correct": "Their Gender"
+    },
+    {
+        "question": "What do Steve Jobs, Bill Gates and Mark Zuckerberg have in common?",
+        "A": "One of the parents is Ukrainian",
+        "B": "Were adopted",
+        "C": "Left the University",
+        "D": "Have three children each",
+        "correct": "Left the University"
+    },
+    {
+        "question": "Lee Strasberg, the founder of 'method acting', played a minor role in the second part of which Oscar-winning film?",
+        "A": "Indiana Jones",
+        "B": "Star Wars",
+        "C": "The Omen",
+        "D": "The Godfather",
+        "correct": "The Godfather"
     }],
     "14": [{
         "question": "Out of these European countries, which has the smallest population density?",
@@ -310,5 +485,29 @@
         "C": "38",
         "D": "12",
         "correct": "16"
+    },
+    {
+        "question": "A number one followed by one hundred zeros is known by what name?",
+        "A": "Googol",
+        "B": "Megatron",
+        "C": "Gigabit",
+        "D": "Nanomole",
+        "correct": "Googol"
+    },
+    {
+        "question": "In October 2021, a country outside Ukraine has recognized Ukrainian as the second official language. Where is this country?",
+        "A": "Poland",
+        "B": "France",
+        "C": "Brazil",
+        "D": "Portugal",
+        "correct": "Brazil"
+    },
+    {
+        "question": "When did the second millennium begin?",
+        "A": "on 1st January, 1000",
+        "B": "on 1st January, 1001",
+        "C": "on 1st January, 2000",
+        "D": "on 1st January, 2001",
+        "correct": "on 1st January, 1001"
     }]
 }
