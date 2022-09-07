@@ -70,14 +70,6 @@
         "C": "J. K. Rowling",
         "D": "Ernest Hemingway",
         "correct": "Arthur Conan Doyle"
-    },
-    {
-        "question": "What name is given to a person who is against increasing the powers of the European Union?",
-        "A": "Eurosceptic",
-        "B": "Eurostar",
-        "C": "Eurotrash",
-        "D": "Eurovision",
-        "correct": "Eurosceptic"
     }],
     "2": [{
         "question": "'Zorro' is the Spanish word for what?",
@@ -86,14 +78,6 @@
         "C": "Rat",
         "D": "Weasel",
         "correct": "Fox"
-    },
-    {
-        "question": "What name is traditionally given to the party held for a woman who is expecting a baby?",
-        "A": "Baby shower",
-        "B": "Baby drizzle",
-        "C": "Baby downpour",
-        "D": "Baby deluge",
-        "correct": "Baby shower"
     },
     {
         "question": "How many X's are there on a regular clock face with Roman numerals?",
@@ -344,14 +328,6 @@
         "correct": "Pacific Ocean"
     },
     {
-        "question": "In Alexander (sic) Dumas' book, 'The Three Musketeers', two of the musketeers are called Athos and Porthos. What was the name of the third Musketeer?",
-        "A": "Aramis",
-        "B": "Cardinal Richelieu",
-        "C": "D'Artagnan",
-        "D": "Planchet",
-        "correct": "Aramis"
-    },
-    {
         "question": "In which year did Hillary Clinton become the 67th Secretary of State of the U.S.A.?",
         "A": "2003",
         "B": "2006",
@@ -392,14 +368,6 @@
         "correct": "William Pitt the Younger"
     },
     {
-        "question": "Whom does God approach with his index finger in the famous fresco in the ceiling of the Sistine Chapel in Rome?",
-        "A": "Jesus",
-        "B": "Adam",
-        "C": "John the Baptist",
-        "D": "Peter",
-        "correct": "Adam"
-    },
-    {
         "question": "What is the type of wood that God calls Noah to build the ark according to Genesis?",
         "A": "Moab",
         "B": "Cypress",
@@ -432,13 +400,6 @@
         "correct": "The Mask"
     },
     {
-        "question": "Which word, that became familiar to many around the world in 2020, comes from the Italian for '40 days'?",
-        "A": "Lockdown",
-        "B": "Isolation",
-        "C": "Quarantine",
-        "D": "Pandemic",
-        "correct": "Quarantine"
-    },{
         "question": "Which nation won the World Championships in football in both 1930 and 1950?",
         "A": "Uruguay",
         "B": "Italy",
@@ -461,14 +422,6 @@
         "C": "Left the University",
         "D": "Have three children each",
         "correct": "Left the University"
-    },
-    {
-        "question": "Lee Strasberg, the founder of 'method acting', played a minor role in the second part of which Oscar-winning film?",
-        "A": "Indiana Jones",
-        "B": "Star Wars",
-        "C": "The Omen",
-        "D": "The Godfather",
-        "correct": "The Godfather"
     }],
     "14": [{
         "question": "Out of these European countries, which has the smallest population density?",
