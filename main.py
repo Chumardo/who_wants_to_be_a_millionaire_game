@@ -66,6 +66,24 @@ while game == True:
     levels_img = Label(money_frame, image=money_image, bg='black', width=460, height=600)
     levels_img.grid(row=0, column=0)
 
+    def restart():
+        global level, a_answer, b_answer, c_answer, d_answer
+        level = 0
+        a_answer.configure(state = NORMAL, bg='blue')
+        b_answer.configure(state = NORMAL, bg='blue')
+        c_answer.configure(state = NORMAL, bg='blue')
+        d_answer.configure(state = NORMAL, bg='blue')
+        update_question_and_answers()
+        canvas = Canvas(game_frame_mid, bg='black', width=193, height=200, bd=0, highlightthickness=0, relief='ridge')
+        canvas.grid(row=0, column=0)
+        canvas.delete('all')
+        image = PhotoImage(file = f"Images/logo.png")
+        canvas.create_image(98, 100, image = image)
+        canvas.image = image
+        fifty_btn.configure(state=NORMAL)
+        audience_btn.configure(state=NORMAL)
+        change_picture()
+
     def fifty_fifty():
         global correct_answer, a_answer, b_answer, c_answer, d_answer
         if correct_answer == a_answer.cget('text'):
@@ -105,7 +123,7 @@ while game == True:
 
     fifty_image = PhotoImage(file="Images/jpge50.png")
     fifty_btn = Button(game_frame_top, image=fifty_image, bg='white', width=85, height=50, highlightthickness=0, command=fifty_fifty)
-    fifty_btn.place(x=300, y=5)
+    fifty_btn.place(x=250, y=5)
 
     def audience_help():
         global a_answer, b_answer, c_answer, d_answer, correct_answer
@@ -197,7 +215,11 @@ while game == True:
 
     audience_image = PhotoImage(file="Images/audience.png")
     audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0, command=audience_help)
-    audience_btn.place(x=450, y=5)
+    audience_btn.place(x=400, y=5)
+
+    restart_image = PhotoImage(file="Images/restart.png")
+    restart_btn = Button(game_frame_top, image=restart_image, bg='white', width=85, height=50, highlightthickness=0, command=restart)
+    restart_btn.place(x=550, y=5)
 
     question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
 
@@ -253,7 +275,6 @@ while game == True:
                 c_answer.after(1000, update(c_answer, color='green'))
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
-            game = False
             level_wins()
 
     def get_b_answer():
@@ -277,7 +298,6 @@ while game == True:
                 c_answer.after(1000, update(c_answer, color='green'))
             elif correct_answer == d_answer.cget('text'):
                 d_answer.after(1000, update(d_answer, color='green'))
-            game = False
             level_wins()
 
     def update(player_answer, color):
@@ -333,7 +353,6 @@ while game == True:
                 b_answer.after(1000, update(b_answer, color='green'))
             elif correct_answer == c_answer.cget('text'):
                 c_answer.after(1000, update(c_answer, color='green'))
-            game = False
             level_wins()
 
         
