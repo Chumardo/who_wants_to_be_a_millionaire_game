@@ -2,11 +2,11 @@ import json
 import random
 
 
-with open('questions.json', 'r') as f:
+with open('data/questions.json', 'r') as f:
   data = json.load(f)
 
 
-class Game():
+class Questions():
 
     def get_question_answers(level):
         level_string = str(level)

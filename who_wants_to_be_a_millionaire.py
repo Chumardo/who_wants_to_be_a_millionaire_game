@@ -1,6 +1,6 @@
 import random
 from tkinter import *
-from game import Game
+from questions import Questions
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
@@ -8,7 +8,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolb
 window = Tk()
 window.title("Who wants to be a millionaire?")
 window.configure(bg="black")
-window.iconphoto(False, PhotoImage(file='Images/icon.png'))
+window.iconphoto(False, PhotoImage(file='data/Images/icon.png'))
 window.minsize(1400, 610)
 window.maxsize(1400, 610)
 
@@ -58,11 +58,11 @@ while game == True:
         toolbar.update()
         canvas.get_tk_widget().pack()
 
-    centre_image = PhotoImage(file = "Images/logo.png")
+    centre_image = PhotoImage(file = "data/Images/logo.png")
     logo_centre = Label(game_frame_mid, image= centre_image, bg='black', width=193, height=200)
     logo_centre.grid(row=0, column=0)
 
-    money_image = PhotoImage(file="Images/0.png")
+    money_image = PhotoImage(file="data/Images/0.png")
     levels_img = Label(money_frame, image=money_image, bg='black', width=460, height=600)
     levels_img.grid(row=0, column=0)
 
@@ -77,7 +77,7 @@ while game == True:
         canvas = Canvas(game_frame_mid, bg='black', width=193, height=200, bd=0, highlightthickness=0, relief='ridge')
         canvas.grid(row=0, column=0)
         canvas.delete('all')
-        image = PhotoImage(file = f"Images/logo.png")
+        image = PhotoImage(file = f"data/Images/logo.png")
         canvas.create_image(98, 100, image = image)
         canvas.image = image
         fifty_btn.configure(state=NORMAL)
@@ -121,7 +121,7 @@ while game == True:
     
 
 
-    fifty_image = PhotoImage(file="Images/jpge50.png")
+    fifty_image = PhotoImage(file="data/Images/jpge50.png")
     fifty_btn = Button(game_frame_top, image=fifty_image, bg='white', width=85, height=50, highlightthickness=0, command=fifty_fifty)
     fifty_btn.place(x=250, y=5)
 
@@ -213,15 +213,15 @@ while game == True:
         audience_btn.configure(state = DISABLED)
 
 
-    audience_image = PhotoImage(file="Images/audience.png")
+    audience_image = PhotoImage(file="data/Images/audience.png")
     audience_btn = Button(game_frame_top, image=audience_image, bg='white', width=85, height=50, highlightthickness=0, command=audience_help)
     audience_btn.place(x=400, y=5)
 
-    restart_image = PhotoImage(file="Images/restart.png")
+    restart_image = PhotoImage(file="data/Images/restart.png")
     restart_btn = Button(game_frame_top, image=restart_image, bg='white', width=85, height=50, highlightthickness=0, command=restart)
     restart_btn.place(x=550, y=5)
 
-    question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
+    question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Questions.get_question_answers(level)
 
     def win_lose(text):
         canvas = Canvas(game_frame_mid, bg='black', width=860, height=200, bd=0, highlightthickness=0, relief='ridge')
@@ -235,7 +235,7 @@ while game == True:
         canvas = Canvas(money_frame, bg='black', width=460, height=600, bd=0, highlightthickness=0, relief='ridge')
         canvas.grid(row=0, column=0)
         canvas.delete('all')
-        image = PhotoImage(file = f"Images/{level}.png")
+        image = PhotoImage(file = f"data/Images/{level}.png")
         canvas.create_image(230, 300, image = image)
         canvas.image = image
 
@@ -360,7 +360,7 @@ while game == True:
         if level < 15:
             global question
             global correct_answer
-            question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Game.get_question_answers(level)
+            question_text, A_ans, B_ans, C_ans, D_ans, correct_answer = Questions.get_question_answers(level)
             question.configure(text=question_text)
             a_answer.configure(text=A_ans)
             b_answer.configure(text=B_ans)
