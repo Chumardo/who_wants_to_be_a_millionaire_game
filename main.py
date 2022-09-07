@@ -9,8 +9,8 @@ window = Tk()
 window.title("Who wants to be a millionaire?")
 window.configure(bg="black")
 window.iconphoto(False, PhotoImage(file='Images/icon.png'))
-window.minsize(1400, 650)
-window.maxsize(1400, 650)
+window.minsize(1400, 610)
+window.maxsize(1400, 610)
 
 level = 0
 game = True
